@@ -39,4 +39,6 @@ Incident Communication
 
 ## Escalation Paths
 - Team-level -> PM -> Product Lead -> Sponsor
-- For security incidents, follow the security incident runbook and notify Security on-call
+- For security incidents, follow the security incident runbook and notify Security Lead on-call; Security Lead coordinates response and notifies the PM for stakeholder communication
+- For customer-impacting issues, Customer Support Representative escalates to PM with ticket data; PM engages engineering for priority triage
+- Infrastructure outages: DevOps Engineer leads initial response; PM notifies stakeholders using the Incident Communication template
