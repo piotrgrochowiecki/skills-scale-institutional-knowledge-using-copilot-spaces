@@ -4,17 +4,19 @@
 Guidance for managing day-to-day execution and tracking progress toward project milestones.
 
 ## Team Rhythm
-- Daily standups (15 min) — focus on progress, blockers, dependencies
-- Weekly delivery sync — show progress, updates, and flagged risks
-- Demo/Review at the end of each sprint or milestone
+- Daily standups (15 min) — focus on progress, blockers, dependencies; attended by Developers, QA, DevOps Engineer, UX Designer, and Business Analyst as relevant to active sprint work
+- Weekly delivery sync — show progress, updates, and flagged risks; includes PM, PdM, Security Lead (as needed), and Customer Support Representative for feedback review
+- Demo/Review at the end of each sprint or milestone — UX Designer and Customer Support Representative participate to validate user-facing outcomes
 
 ## Workflows
 - Use the project board (e.g., GitHub Projects) with columns: Backlog, Ready, In Progress, In Review, QA, Done
 - Pull Request workflow:
   - Small PRs (<= 400 lines when possible)
   - Include issue link and acceptance criteria in PR description
-  - Run automated tests and linting in CI before requesting review
+  - Run automated tests and linting in CI before requesting review (DevOps Engineer owns CI pipeline configuration)
   - Require at least one approval before merging (or team-defined policy)
+  - Security-sensitive PRs require review from Security Lead
+  - UI/UX changes require sign-off from UX Designer before merge
 
 ## Quality & Testing
 - Unit tests for new logic
